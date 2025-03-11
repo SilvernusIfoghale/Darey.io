@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Essentials</title>
+    <!--  CSS for styling -->
     <style>
       .container {
         display: flex;
@@ -36,22 +37,35 @@
     </style>
   </head>
   <body>
-    <!-- Learn the core concept of JavaScript, including variables, functions, loops, and events. Build dynamic and interactive web pages with hands-on examples. Perfect for beginners looking to start their coding journey  
+    <!--  
      
-    Objective To create a simple counter application using html, css and basic javaScript.
+    Objective of the Counter App
+
+    User Interaction: Allow users to interact with the app by clicking buttons to increase, decrease, or reset the counter.
+
+    Dynamic Updates: Display the current counter value dynamically on the webpage.
+
+    Basic Styling: Use CSS to make the app visually appealing and user-friendly.
+
+    JavaScript Functionality: Implement the logic for incrementing, decrementing, and resetting the counter using JavaScript.
     -->
     <section class="container">
       <div class="main">
         <div>
           <input type="text" placeholder="0" disabled />
+          <!-- Display the current counter value -->
         </div>
         <div class="buttons">
           <button id="increment">Increment</button>
+          <!-- Button to increment the counter -->
           <button id="reset">Reset</button>
+          <!-- Button to reset the counter -->
           <button id="decrement">Decrement</button>
+          <!-- Button to decrement the counter -->
         </div>
       </div>
     </section>
+    <!--  JavaScript for functionality -->
     <script>
       const input = document.querySelector("input");
       const increment = document.querySelector("#increment");
