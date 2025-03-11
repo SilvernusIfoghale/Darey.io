@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Essentials</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+      }
+      .main input {
+        margin: 10px 0;
+        padding: 5px;
+        border-radius: 5px;
+        width: 200px;
+      }
+      .main button {
+        background-color: rgb(57, 113, 255);
+        padding: 8px 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 0.6rem;
+        cursor: pointer;
+        color: white;
+      }
+      .main button:hover {
+        background-color: rgb(53, 87, 254);
+      }
+      #reset {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Learn the core concept of JavaScript, including variables, functions, loops, and events. Build dynamic and interactive web pages with hands-on examples. Perfect for beginners looking to start their coding journey  
+     
+    Objective To create a simple counter application using html, css and basic javaScript.
+    -->
+    <section class="container">
+      <div class="main">
+        <div>
+          <input type="text" placeholder="0" disabled />
+        </div>
+        <div class="buttons">
+          <button id="increment">Increment</button>
+          <button id="reset">Reset</button>
+          <button id="decrement">Decrement</button>
+        </div>
+      </div>
+    </section>
+    <script>
+      const input = document.querySelector("input");
+      const increment = document.querySelector("#increment");
+      const reset = document.querySelector("#reset");
+      const decrement = document.querySelector("#decrement");
+      //  increment
+      increment.addEventListener("click", () => {
+        input.value++;
+      });
+      //  reset
+      reset.addEventListener("click", () => {
+        input.value = 0;
+      });
+      //  decrement
+      decrement.addEventListener("click", () => {
+        input.value--;
+      });
+    </script>
+  </body>
+</html>
