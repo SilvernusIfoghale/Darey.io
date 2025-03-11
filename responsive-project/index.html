@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        background-color: rgb(223, 241, 185);
+        padding: 15px;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      header p {
+        padding: 10px 0;
+      }
+      header button {
+        margin-top: 10px;
+        padding: 7px 20px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: rgb(3, 118, 6);
+      }
+      header button:hover {
+        background-color: rgb(7, 136, 82);
+      }
+      section {
+        display: flex;
+        margin: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .card {
+        border: 2px solid gray;
+        width: 250px;
+        height: 250px;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 5px;
+      }
+      .card img {
+        width: 50px;
+      }
+      footer {
+        background-color: silver;
+        padding: 5px 10px;
+        text-align: center;
+        font: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Objective Use HTML and CSS (no JavaScript required). Ensure responsive
+    design using CSS Flexbox or Grid. Implement proper semantic HTML structure
+    for accessibility. -->
+
+    <!-- hero section starts here  -->
+    <header>
+      <h1>Introducing New Samsung Flagship</h1>
+      <p>
+        Everyone's Dream Device, a super device that takes your computing
+        experience to a whole different level.
+      </p>
+      <button>Order Now</button>
+    </header>
+    <!-- hero section ends here  -->
+
+    <!-- feature section starts here   -->
+    <section>
+      <!-- card -->
+      <div class="card">
+        <img
+          src="https://t4.ftcdn.net/jpg/09/75/71/23/360_F_975712323_Cx1q6W8c38gR4xTkxHucFb8BteaTXsFD.jpg"
+          alt="calls"
+        />
+        <h3>Calling</h3>
+        <p>
+          With the feature you can easily reach out to your love once with just
+          a single dial
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.shutterstock.com/image-vector/5g-symbol-logo-icon-vector-260nw-1717992367.jpg"
+          alt="5g"
+        />
+        <h3>5G Support</h3>
+        <p>
+          This feature allows for fast upload and download over the cloud,
+          leading to a smarter and snappy internet speed.
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.shutterstock.com/image-vector/outline-icon-open-sim-card-260nw-1597271869.jpg"
+          alt="sim tray"
+        />
+        <h3>Dual Sim Support</h3>
+        <p>
+          Allows you to stay connected to up to two different service provider,
+          for a more robust communication.
+        </p>
+      </div>
+    </section>
+
+    <!-- feature section ends here   -->
+
+    <!-- footer section starts here  -->
+    <footer>
+      <p>E-mail: latestPhone@gmail.com | Office: +234 815 122 8316</p>
+      <p>&copy; All right reserve 2025</p>
+    </footer>
+    <!-- footer section ends here  -->
+  </body>
+</html>
