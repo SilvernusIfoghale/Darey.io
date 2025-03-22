@@ -1,0 +1,95 @@
+<!-- OBJECTIVE
+The goal of this project is to build a Calculator App using HTML, CSS, and JavaScript. The application should allow users to perform basic arithmetic operations like addition, subtraction, multiplication, and division.
+
+Task Breakdown
+1. Setting Up the Calculator UI Create a basic HTML layout with the following elements: A display screen to show the current input and result. A button for each digit (0-9) and a button for each operation (addition, subtraction, multiplication, division). A clear button to reset the calculator. A button for the equal sign (=) to compute the result.
+2. Implement Functionality with JavaScript Use JavaScript to: Handle digit button clicks to update the display. Handle operation button clicks to update the operation. Handle the equal button to compute the result. Handle the clear button to reset the calculator.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <!-- display section  starts-->
+        <div class="display">
+          <div class="content">
+            <div class="input"></div>
+            <div class="output"></div>
+          </div>
+        </div>
+        <!-- display section ends-->
+
+        <div class="keys">
+          <div data-key="clear" class="key action">
+            <span>AC</span>
+          </div>
+          <div data-key="brackets" class="key action">
+            <span>()</span>
+          </div>
+          <div data-key="%" class="key action">
+            <span>%</span>
+          </div>
+          <div data-key="/" class="key action">
+            <span>/</span>
+          </div>
+          <div data-key="7" class="key action">
+            <span>7</span>
+          </div>
+          <div data-key="8" class="key action">
+            <span>8</span>
+          </div>
+          <div data-key="9" class="key action">
+            <span>9</span>
+          </div>
+          <div data-key="*" class="key action">
+            <span>x</span>
+          </div>
+          <div data-key="4" class="key action">
+            <span>4</span>
+          </div>
+          <div data-key="5" class="key action">
+            <span>5</span>
+          </div>
+          <div data-key="6" class="key action">
+            <span>6</span>
+          </div>
+          <div data-key="-" class="key action">
+            <span>-</span>
+          </div>
+          <div data-key="1" class="key action">
+            <span>1</span>
+          </div>
+          <div data-key="2" class="key action">
+            <span>2</span>
+          </div>
+          <div data-key="3" class="key action">
+            <span>3</span>
+          </div>
+          <div data-key="+" class="key action">
+            <span>+</span>
+          </div>
+          <div data-key="backspace" class="key action">
+            <span>&lt;</span>
+          </div>
+          <div data-key="0" class="key action">
+            <span>0</span>
+          </div>
+          <div data-key="." class="key action">
+            <span>.</span>
+          </div>
+          <div data-key="=" class="key action">
+            <span>=</span>
+          </div>
+        </div>
+        <!-- Button Sections ends here -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
